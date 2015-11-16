@@ -1,0 +1,36 @@
+// the client API project
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '0.1'
+jar {
+	baseName = 'jOpen62541API'
+    manifest {
+        attributes 'Implementation-Title': 'jOpen62541 API',
+                   'Implementation-Version': 0.1
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	// Bridj run time dependency
+    compile group: 'com.nativelibs4java', name: 'bridj', version: '0.7.0'
+}
+  
+// zips up the javadocs
+// Note:  the dependent javadoc task will fail due to Bridj HTML problems
+task zipapi(type:Zip, dependsOn:build) {
+	from 'build/docs/javadoc'
+	destinationDir = file('../../dist')
+	archiveName 'client_api_javadoc-0.1.zip'
+}
+
+task copyfiles(type:Copy, dependsOn:zipapi) {
+	// API jar
+	from './build/libs'
+    into '../../dist'
+}
+

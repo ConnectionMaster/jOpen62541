@@ -1,0 +1,22 @@
+// java test client project
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '0.1'
+jar {
+	baseName = 'jOpen62541TestClient'
+    manifest {
+        attributes 'Implementation-Title': 'jOpen62541 Test Client',
+                   'Implementation-Version': 0.1,
+				   'Main-Class': 'org.point85.ua.TestUaClient'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	// dependent upon the client API
+    compile project(':client_api')
+}

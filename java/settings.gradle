@@ -1,0 +1,2 @@
+// the test client project depends on the client API project
+include "client_api", "test_client"

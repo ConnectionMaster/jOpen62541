@@ -1,0 +1,14 @@
+// both subprojects use the java plugin and Maven Central for external dependencies
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+       mavenCentral()
+    }
+
+    version = '1.0'
+
+    jar {
+        manifest.attributes provider: 'gradle'
+    }
+}
