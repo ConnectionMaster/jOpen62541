@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<history>
-   <processor signature="gcc 4.8 x86_64-linux-gnu -Wall -Wno-long-long -Wpointer-arith -Wconversion -fPIC -c -fPIC -DLinux -DGNU_GCC -Itarget/nar/open62541-0.1.1-noarch/include -Isrc/main/include">
-      <target file="wrapper62541.o" lastModified="1514455cf08">
-         <source file="../../../../src/main/c/wrapper62541.c" lastModified="151444a8850"/>
-      </target>
-   </processor>
-</history>

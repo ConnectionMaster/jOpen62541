@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<history>
-   <processor signature="4.8 -shared -L/home/bcopy/workspace/jOpen62541/nar/target/nar/open62541-0.1.1-amd64-Linux-gpp-shared/lib/amd64-Linux-gpp/shared -lopen62541-0.1.1 -fexceptions -lstdc++">
-      <target file="libjopen62541-0.1.1.so" lastModified="1514455d6d8">
-         <source file="../../../../open62541-0.1.1-amd64-Linux-gpp-shared/lib/amd64-Linux-gpp/shared/libopen62541-0.1.1.so" lastModified="15144471d50"/>
-         <source file="../../../../obj/amd64-Linux-gpp/wrapper62541.o" lastModified="1514455cf08"/>
-      </target>
-   </processor>
-</history>
