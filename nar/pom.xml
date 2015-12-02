@@ -12,11 +12,16 @@
     <groupId>org.narlibs</groupId>
     <artifactId>jopen62541</artifactId>
     <version>0.1.1</version>
-    <name>OPC-UA Open62541 Java JNA wrappers NAR</name>
-    <description>OPC-UA Open62541 Java JNA wrappers NAR</description>
+    <name>OPC-UA Open62541 Java Bridj wrappers NAR</name>
+    <description>OPC-UA Open62541 Java Bridj wrappers NAR</description>
     <url>https://github.com/CERN/jOpen62541</url>
 
     <developers>
+        <developer>
+            <id>billran</id>
+            <name>Kent Randall</name>
+            <email>kentra@pacbell.net</email>
+        </developer>
         <developer>
             <id>bcopy</id>
             <name>Brice Copy</name>
@@ -70,7 +75,13 @@
                 </configuration>
             </plugin>
             
-            <plugin>
+        <plugin>
+          <groupId>com.nativelibs4java</groupId>
+          <artifactId>maven-jnaerator-plugin</artifactId>
+          <version>0.11</version>
+        </plugin>
+
+        <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>

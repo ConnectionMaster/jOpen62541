@@ -1,0 +1,38 @@
+// library name to match dll name
+-library Open62541Ext
+
+// source header file
+wrapper62541.h 
+
+// output folder
+-o src 
+
+// verbose
+-v 
+
+// individual output files
+-mode Directory 
+
+// Windows 32 bit
+-arch win32 
+
+// use JNA or BridJ interface
+-runtime BridJ 
+
+// skip deprecated functions
+-skipDeprecated
+
+// WIN32 pre-processor flag
+-D_WIN32=
+
+// force file overwrite
+-f
+
+// generate getters and setters (1)
+//-beanStructs
+
+// No auto-configuration of preprocessor symbols and paths (2)
+//-noAuto
+
+// java package name
+-package org.point85.open62541
