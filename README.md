@@ -1,5 +1,7 @@
 # jOpen62541
-The "c" folder contains the C shared library that wraps the open62541 client dll and a test program.  The "bridj" folder generates the java client stubs.  The "java" folder contains the client API and a test client.  The "dist" folder contains the shared library, java client API jar and zip of the Javadocs.
+* The "c" folder contains the C shared library that wraps the open62541 client dll and a test program. 
+* The "bridj" folder generates the java client stubs.  The "java" folder contains the client API and a test client.  
+* The "dist" folder contains the shared library, java client API jar and zip of the Javadocs.
 
 Steps to build a 32-bit wrapper dll for Microsoft Windows from the Open62541 0.1.1 release source are:
 1.  Install MinGW in C:\MinGW folder (http://www.mingw.org/)
